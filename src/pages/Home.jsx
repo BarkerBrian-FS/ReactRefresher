@@ -1,5 +1,6 @@
 import { getProducts } from "../data/products.js";
 import ProductCard from "../components/ProductCard.jsx";
+
 const Home = () => {
   const products = getProducts();
   return (
