@@ -28,12 +28,9 @@ const Auth = () => {
 
     if (result.success) {
       navigate("/");
-      console.log("yay");
     } else {
       setError(result.error);
     }
-
-    console.log(result);
   }
 
   return (
