@@ -27,7 +27,9 @@ export default function CartProvider({ children }) {
       .filter((item) => item.product);
   }
   return (
-    <CartContext.Provider value={{ cartItems, addToCart }}>
+    <CartContext.Provider
+      value={{ cartItems, addToCart, getCartItemsWithProducts }}
+    >
       {children}
     </CartContext.Provider>
   );
